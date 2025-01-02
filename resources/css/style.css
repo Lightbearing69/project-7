@@ -60,12 +60,16 @@ header {
     height: 4rem;
 }
 
+.nav.mobile {
+    display: none;
+}
+
 .nav {
     height: 100%;
     width:100%;
     display: flex;
     align-items: center;
-
+    justify-content:space-between;
 }
 
 .navleft {
@@ -84,11 +88,26 @@ header {
 .navright {
     list-style: none;
     display: inline-flex;
-    width:100%;
-    justify-content: flex-end;
     margin-right: 1.5rem;
 }
 
 .navright li {
     padding-left:16px;
+}
+
+@media only screen and (max-width:480px) {
+    
+    .nav.desktop {
+        display: none;
+    }
+
+    .nav.mobile {
+        display:flex;
+    }
+
+    .navleft {
+        width:100%;
+        justify-content: space-evenly;
+        margin-left: 0rem;
+    }
 }
