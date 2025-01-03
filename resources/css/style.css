@@ -62,6 +62,10 @@ h3 {
     font-size: 1rem;
 }
 
+h4 {
+    font-size: 0.75rem;
+}
+
 .blue {
     color: lightskyblue;
 }
@@ -71,6 +75,10 @@ h3 {
 }
 .lightgray {
     color: lightgray;
+}
+
+.graybg {
+    background-color: #d1cfcf;
 }
 
 header {
@@ -139,7 +147,7 @@ header {
     width: 100%;
     min-height: 200px;
     background-color:#d1cfcf;
-    flex-flow:row;
+    flex-flow: row;
 }
 
 .section1_image {
@@ -208,5 +216,134 @@ header {
 
     .startbox {
         background-color:#999999;
+    }
+}
+
+.section2.mobile {
+    display:none;
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    flex-direction: row;
+}
+
+.section2_leftbox {
+    display: flex;
+    max-width: 60%;
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    margin-top: 2px;
+}
+
+.section2_image1 img{
+    width:100%;
+    margin-bottom:32px;
+}
+
+.section2_lefttext {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.section2_lefttext h4 {
+    padding-top: 0.5rem;
+}
+
+
+
+
+.section2_right {
+    width: 40%;
+    padding: 1rem 0;
+    margin-top: 2px;
+    border-left: 1px solid #d1cfcf;
+}
+
+.section2_rightbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rightboxes {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.section2_image2 {
+    display: flex;
+    width:35%;
+    padding-right: 1rem;
+}
+
+.section2_image2 img {
+    max-width:100%;
+}
+
+.rightboxtext {
+    display:flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 0.5rem;
+}
+
+.borderbot {
+    border-bottom: 1px solid #d1cfcf;
+}
+
+.bordertop {
+    border-top: 1px solid #d1cfcf;
+}
+
+@media only screen and (max-width:480px) {
+    .section2.desktop {
+        display:none;
+    }
+
+    .section2.mobile {
+        display:flex;
+    }
+
+    .section2_right {
+        width: 100%;
+        padding: 1rem 1rem;
+        margin-top: 0px;
+        border-left: none;
+    }
+
+    .rightboxes {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem 2rem 0rem;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0px;
+    }    
+
+    .section2_image2 {
+        display: flex;
+        justify-content: center;
+        width:100%;
+        padding-right: 0rem;
+    }
+
+    .section2_image2 img {
+        max-width:100%;
+    }
+
+    .rightboxtext {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        padding: 1.5rem 1rem 0 1rem;
     }
 }
