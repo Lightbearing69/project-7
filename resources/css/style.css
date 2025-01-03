@@ -26,6 +26,7 @@ html {
     background-color: seashell;
     font-size: 16px;
     font-family: "Poppins";
+    color:#525151;
 }
 
 .visually-hidden {
@@ -47,6 +48,22 @@ html {
 }
 .bold {
     font-weight: 700;  
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.blue {
+    color: lightskyblue;
 }
 
 .darkgray {
@@ -109,5 +126,83 @@ header {
         width:100%;
         justify-content: space-evenly;
         margin-left: 0rem;
+    }
+}
+
+.section1.mobile {
+    display:none;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    background-color:#d1cfcf;
+    flex-flow:row;
+}
+
+.section1_image {
+    display: flex;
+    max-width: 50%;
+    margin: 32px 24px;
+}
+
+.section1_image img {
+    max-width: 100%; 
+}
+
+.section1_text {
+    display:flex;
+    max-width:80%;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px 0 10px 0;
+}
+
+.startbox {
+    width:100%;
+    text-align:center;
+    background-color:#666262;
+    color: white;
+    padding: 0.5rem;
+    align-self: center;
+}
+
+@media only screen and (max-width:480px) {
+    
+    .section1.desktop {
+        display: none;
+    }
+
+    .section1.mobile {
+        display:flex;
+    }
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 200px;
+        background-color:#d1cfcf;
+        flex-flow:column;
+    }
+
+    .section1_image {
+        display: flex;
+        max-width: 100%;
+        margin: 1px 0px;
+    }
+
+    .section1_text {
+        display:flex;
+        max-width:80%;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 32px 16px 32px 16px;
+    }
+
+    .section1_text h1 {
+        margin-bottom: 0.5rem;
     }
 }
