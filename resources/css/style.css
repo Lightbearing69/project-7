@@ -196,7 +196,7 @@ header {
 
     .section1_text {
         display:flex;
-        max-width:80%;
+        max-width: 100%;
         flex-direction: column;
         gap: 1.5rem;
         margin: 32px 16px 32px 16px;
@@ -204,5 +204,9 @@ header {
 
     .section1_text h1 {
         margin-bottom: 0.5rem;
+    }
+
+    .startbox {
+        background-color:#999999;
     }
 }
